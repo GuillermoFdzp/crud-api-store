@@ -23,6 +23,7 @@ const HomePage = () => {
       alert('ID y nombre son obligatorios');
       return;
     }
+    
 
     await addPet({ id: petId, name: petName, status: petStatus });
     mutate();
